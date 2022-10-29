@@ -17,21 +17,28 @@ function App() {
       name: "Zuri Books",
       id: "books",
       url: "https://books.zuri.team/",
+      title: "Your all in one plug to get every book you need as regards the tech industry."
     },
     {
       name: "Python Books",
       id: "book__python",
       url: "https://books.zuri.team/python-forbeginners?ref_id=deetechy",
+      title: "Are you just starting out or are you already started in the python programming language. Here is a book that will take you from beginner to professional."
+
     },
     {
       name: "Background Check for Coders",
       id: "pitch",
       url: "https://background.zuri.team/",
+      title: "You code? Take a background check here."
+
     },
     {
       name: "Design Books",
       id: "book__design",
       url: "https://books.zuri.team/design-rules",
+      title: "Your all in one guide in the design industry."
+
     }
   ]
 
