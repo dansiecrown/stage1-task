@@ -3,10 +3,29 @@ import './contact.css'
 
 export default function Contact() {
     const [agree, setAgree] = React.useState(false);
+    const [msg, setMsg] = React.useState('');
+    const [msgClass, setMsgClass] = React.useState('');
+    const [showClass, setShowClass] = React.useState('hideErr');
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if (msg === "") {
+
+            setMsgClass('err')
+            setShowClass('showErr')
+        } else {
+            setMsgClass("")
+            setShowClass('hideErr')
+        }
+    }
 
     const handleChange = () => {
         setAgree(!agree);
 
+    }
+
+    const hasMsg = (e) => {
+        setMsg(e.target.value)
     }
 
     return (
@@ -39,8 +58,8 @@ export default function Contact() {
                         <div className='form-group'>
                             <div className="row">
                                 <label htmlFor='message'>Message</label>
-                                <textarea id='message' name='message' placeholder="Send me a message and I'll reply you as soon as possible." rows='5' />
-                                <p></p>
+                                <textarea id='message' name='message' onChange={(e) => hasMsg(e)} placeholder="Send me a message and I'll reply you as soon as possible." rows='5' className={msgClass} />
+                                <p className={showClass}>Please enter a message.</p>
                             </div>
                         </div>
                         <div className='checkbox-group'>
@@ -48,7 +67,7 @@ export default function Contact() {
                             <label>You agree to providing your data to Daniel who may contact you.</label>
                         </div>
                         <div className='form-group'>
-                            <button id='btn__submit' disabled={agree ? false : true}>Send message</button>
+                            <button id='btn__submit' disabled={agree ? false : true} onClick={(e) => handleSubmit(e)}>Send message</button>
                         </div>
                     </form>
                 </div>
