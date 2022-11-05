@@ -35,7 +35,7 @@ export default function Contact() {
                 <div className='form-container'>
                     <div className='head'>
                         <h1>Contact Me</h1>
-                        <p>Hi there, contact me to aske me about anything you have in mind.</p>
+                        <p>Hi there, contact me to ask me about anything you have in mind.</p>
                     </div>
                     <form >
                         <div className='form-group'>
