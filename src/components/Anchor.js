@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Anchor({ data }) {
 
@@ -9,6 +10,7 @@ export default function Anchor({ data }) {
     return (
         <div className="container">
             {anchor}
+            <Link to={'/contact'} className='anchor' id='contact'>Contact</Link>
         </div>
     )
 }
