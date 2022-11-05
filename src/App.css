@@ -21,7 +21,7 @@ header{
   border-radius: 50%;  
 }
 
-#twitter{
+.twitter{
   font-weight: 700;
   font-size: 20px;
 }
@@ -54,7 +54,7 @@ a{
   border-radius: 8px;
 }
 
-.footer1{
+.App .footer1{
   width: 80%;
   margin: auto;
   display: flex;
@@ -63,12 +63,12 @@ a{
   padding: 4em;
 }
 
-.footer1 img{
+.App .footer1 img{
   width: 24px;
   height: 24px;
 }
 
-.footer2{
+.App .footer2{
   width: 80%;
   margin: auto;
   display: flex;
@@ -81,25 +81,25 @@ a{
   margin: auto;
 }
 
-.footer2 p{
+.App.footer2 p{
   font-size: 14px;
   color: #667085;
 }
 
-.separator{
+.App .separator{
   width: 90%;
   margin: auto;
 
 }
 
 @media screen and (max-width: 768px){
-  .container{
+  .App  .container{
     width: 90%;
   }
-  .footer1{
+  .App .footer1{
     width: 90%;
   }
-  .footer2{
+  .App .footer2{
     width: 90%;
   }
   #slack{
@@ -109,12 +109,12 @@ a{
     display: block;
   }
 
-  .footer2{
+  .App .footer2{
     display: block;
     text-align: left;
   }
 
-  .footer2 *{
+  .App .footer2 *{
     margin-top: 1em;
   }
 }
